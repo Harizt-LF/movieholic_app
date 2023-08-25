@@ -9,12 +9,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          body: Center(
-        child: Text("Halo"),
-      )),
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("Halo"),
+          ),
+        ),
+      ),
     );
   }
 }
