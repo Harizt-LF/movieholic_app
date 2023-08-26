@@ -14,8 +14,16 @@ class MainApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            leading: Text('ini leading'),
-            title: Text("Halo Ini Aplikasi"),
+            leading: Container(
+              width: 100,
+              height: 100,
+              //color: Colors.amber,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [Icon(Icons.access_alarms)], //Test Icon
+              ),
+            ),
+            title: const Text("Halo Ini Aplikasi"),
           ),
         ),
       ),
