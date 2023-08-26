@@ -14,7 +14,8 @@ class MainApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Halo"),
+            leading: Text('ini leading'),
+            title: Text("Halo Ini Aplikasi"),
           ),
         ),
       ),
