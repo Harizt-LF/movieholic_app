@@ -11,6 +11,12 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Movielic',
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          color: Color.fromARGB(255, 25, 21, 37),
+        ),
+      ),
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
@@ -20,7 +26,7 @@ class MainApp extends StatelessWidget {
               width: 100,
               height: 100,
               //color: Colors.amber,
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [Icon(Icons.house_siding_outlined)], //Test Icon
               ),
