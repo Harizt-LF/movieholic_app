@@ -33,44 +33,47 @@ class MainApp extends StatelessWidget {
             ),
             title: const Text("Movielic"),
           ),
-          body: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 19),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  const Text(
-                    "Halo, User !",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 243, 241, 235),
-                        border: Border.all(width: 1),
-                        borderRadius: BorderRadius.circular(10)),
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    height: 45,
-                    child: Row(
-                      children: [
-                        const Icon(Icons.search),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          "Cari movie favorit mu disini !",
-                          style:
-                              TextStyle(color: Colors.black.withOpacity(0.5)),
-                        )
-                      ],
+          body: SingleChildScrollView(
+            child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 19),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 20,
                     ),
-                  )
-                ],
-              )),
+                    const Text(
+                      "Halo, User !",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 243, 241, 235),
+                          border: Border.all(width: 1),
+                          borderRadius: BorderRadius.circular(10)),
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      height: 45,
+                      child: Row(
+                        children: [
+                          const Icon(Icons.search),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Cari movie favorit mu disini !",
+                            style:
+                                TextStyle(color: Colors.black.withOpacity(0.5)),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                )),
+          ),
         ),
       ),
     );
