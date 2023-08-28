@@ -38,15 +38,14 @@ class MainApp extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Halo, User !",
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
@@ -54,12 +53,12 @@ class MainApp extends StatelessWidget {
                         color: const Color.fromARGB(255, 243, 241, 235),
                         border: Border.all(width: 1),
                         borderRadius: BorderRadius.circular(10)),
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     height: 45,
                     child: Row(
                       children: [
-                        Icon(Icons.search),
-                        SizedBox(
+                        const Icon(Icons.search),
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
