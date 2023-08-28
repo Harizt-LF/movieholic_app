@@ -22,19 +22,17 @@ class MainApp extends StatelessWidget {
           appBar: AppBar(
             centerTitle: true,
             toolbarHeight: 50,
-            leading: Container(
-              width: 100,
-              height: 100,
-              //color: Colors.amber,
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.person)], //Test Icon
-              ),
+            leading: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.person),
             ),
             title: const Text("Movielic"),
             actions: [
-              Icon(Icons.settings),
-              Padding(padding: EdgeInsets.only(right: 20))
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.settings),
+              ),
+              Padding(padding: EdgeInsets.only(right: 10))
             ],
           ),
           body: SingleChildScrollView(
@@ -72,6 +70,16 @@ class MainApp extends StatelessWidget {
                               TextStyle(color: Colors.black.withOpacity(0.5)),
                         )
                       ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  OutlinedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Tekan ini",
+                      style: TextStyle(color: Colors.black),
                     ),
                   )
                 ],
